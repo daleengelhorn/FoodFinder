@@ -1,0 +1,27 @@
+body{
+    background-color: #eeeeee
+}
+
+.header{
+    background-image: url("https://images.pexels.com/photos/279835/pexels-photo-279835.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25%;
+    min-height: 300px;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.button{
+    font-size: 32px;
+    display: block;
+    margin: auto;
+}
+
