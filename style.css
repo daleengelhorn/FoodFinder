@@ -19,9 +19,66 @@ body{
     font-weight: bold;
 }
 
+
 .button{
     font-size: 32px;
     display: block;
     margin: auto;
 }
 
+.filters{
+    display: flex;
+    overflow: auto;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+.priceRange{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 33.3%;
+    margin: 0px 5px 0px 0px;
+}
+
+.filters h1{
+    margin-bottom: 10px;
+}
+
+.foodType{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 33.3%;
+    margin: 0px 5px;
+}
+
+.distance{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 33.3%;
+    margin: 0px 0px 0px 5px; 
+}
+
+.priceLabels{
+  width: 50px;
+  margin: auto;
+  text-align: left;
+}
+
+.foodLabels{
+    width: 100px;
+    padding-left: 25px;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 25px;
+  }
+
+  .distanceLabels{
+    width: 100px;
+    padding-left: 25px;
+    margin: auto;
+    text-align: left;
+  }
+
+h5{
+    text-align: center;
+}

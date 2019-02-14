@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Restaurant Picker</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div>
-    <header class="header">
-        <h1>
-            Where We Eatin?
-        </h1>
-    </header>
+        <header class="header">
+            <h1>
+                FoodFinder
+            </h1>
+        </header>
     </div>
+    <div class="filters">
+        <div class="priceRange">
+            <h1>Price Range</h1>
+            <div class="priceLabels">
+            <label for="$"><input type="checkbox" name="$" id="$">$</label>
+            <br>
+            <label for="$$"><input type="checkbox" name="$$" id="$$">$$</label>
+            <br>
+            <label for="$$$"><input type="checkbox" name="$$$" id="$$$">$$$</label>
+        </div>
+        </div>
+        <div class="foodType">
+            <h1>Food Type</h1>
+            <div class="foodLabels"> 
+            <label for="pizza"><input type="checkbox" name="pizza" id="pizza">Pizza</label>
+            <br> 
+            <label for="steakhouse"><input type="checkbox" name="steakhouse" id="steakhouse">Steakhouse</label>
+            <br>
+            <label for="mexican"><input type="checkbox" name="mexican" id="mexican">Mexican</label>
+            <br>
+            <label for="chinese"><input type="checkbox" name="chinese" id="chinese">Chinese</label>
+            <br>
+            <label for="burger"><input type="checkbox" name="burger" id="burger">Burger</label>
+            </div>
+        </div>
+        <div class="distance">
+            <h1>Distance</h1>
+            <div class="distanceLabels">
+            <label for="five"><input type="checkbox" name="five" id="five">5 Miles</label>
+            <br> 
+            <label for="sixToFifteen"><input type="checkbox" name="sixToFifteen" id="sixToFifteen">6-15 Miles</label>
+            <br>   
+            <label for="sixteenToThirty"><input type="checkbox" name="sixteenToThirty" id="sixteenToThirty">16-30 Miles</label>
+            <br>   
+            <label for="thirtyPlus"><input type="checkbox" name="thirtyPlus" id="thirtyPlus">30+ Miles</label>
+            </div>
+        </div>
+    </div>
+    <br>
     <div>
-        <button class = "button">Find a Restaurant</button>
+        <button class="button">Find a Restaurant</button>
     </div>
 </body>
+<footer>
+    <h5>Made by <a href="https://www.linkedin.com/in/daleengelhorn/">Dale Engelhorn</a></h5>
+</footer>
 </html>
