@@ -2,8 +2,11 @@
 <html>
 
 <head>
-    <title>Restaurant Picker</title>
+    <title>FoodFinder</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +17,8 @@
             </h1>
         </header>
     </div>
-    <div class="filters">
+
+    <!--   <div class="filters">
         <div class="priceRange">
             <h1>Price Range</h1>
             <div class="priceLabels">
@@ -51,13 +55,109 @@
             <label for="thirtyPlus"><input type="checkbox" name="thirtyPlus" id="thirtyPlus">30+ Miles</label>
             </div>
         </div>
+    </div> -->
+
+
+
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Price Range</h5>
+                <div class="body-center">
+                    <ul>
+                        <li>
+                            <label for="$"><input type="checkbox" name="$" id="$"> $</label>
+                        </li>
+                        <li>
+                            <label for="$$"><input type="checkbox" name="$$" id="$"> $$</label>
+                        </li>
+                        <li>
+                            <label for="$$$"><input type="checkbox" name="$$$" id="$$$"> $$$</label>
+                        </li>
+                        <li>
+                            <label for="$$$$"><input type="checkbox" name="$$$$" id="$$$$"> $$$$</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Food Type</h5>
+                <div class='body-center'>
+                    <ul>
+                        <li>
+                            <label for="pizza"><input type="checkbox" name="pizza" id="pizza"> Pizza</label>
+                        </li>
+                        <li>
+                            <label for="burger"><input type="checkbox" name="burger" id="burger"> Burger</label>
+                        </li>
+                        <li>
+                            <label for="seafood"><input type="checkbox" name="seafood" id="seafood">
+                                Seafood</label>
+                        </li>
+                        <li>
+                            <label for="sushi"><input type="checkbox" name="sushi" id="sushi"> Sushi</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="mexican"><input type="checkbox" name="mexican" id="mexican"> Mexican</label>
+                        </li>
+                        <li>
+                            <label for="chinese"><input type="checkbox" name="chinese" id="chinese"> Chinese</label>
+                        </li>
+                        <li>
+                            <label for="steakhouse"><input type="checkbox" name="steakhouse" id="steakhouse">
+                                Steakhouse</label>
+                        </li>
+                        <li>
+                            <label for="other"><input type="checkbox" name="other" id="other"> Other</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Distance</h5>
+                <div class="body-center">
+                    <ul>
+                        <li>
+                            <label for="fiveMiles"><input type="checkbox" name="fiveMiles" id="fiveMiles"> 5
+                                Miles</label>
+                        </li>
+                        <li>
+                            <label for="sixToFifteen"><input type="checkbox" name="sixToFifteen" id="sixToFifteen"> 6-15
+                                Miles</label>
+                        </li>
+                        <li>
+                            <label for="sixteenToThirty"><input type="checkbox" name="sixteenToThirty"
+                                    id="sixteenToThirty"> 16-30 Miles</label>
+                        </li>
+                        <li>
+                            <label for="thirtyPlus"><input type="checkbox" name="thirtyPlus" id="thirtyPlus"> 30+
+                                Miles</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <br>
-    <div>
-        <button class="button">Find a Restaurant</button>
+
+
+    <div class="find">
+        <a href="" class="button">Find a Restaurant</a>
     </div>
+
+
+    <br>
 </body>
 <footer>
-    <h5>Made by <a href="https://www.linkedin.com/in/daleengelhorn/">Dale Engelhorn</a></h5>
+    <div class="foot">
+        <h5>Made by <a href="https://www.linkedin.com/in/daleengelhorn/">Dale Engelhorn</a></h5>
+    </div>
 </footer>
+
 </html>
