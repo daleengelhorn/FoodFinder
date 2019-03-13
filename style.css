@@ -1,11 +1,8 @@
 *{
-font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
 }
-
-body{
-    background-color: #eeeeee;
-}
-
 
 .header{
     background-image: url("https://images.pexels.com/photos/279835/pexels-photo-279835.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -13,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-position: 25%;
     min-height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header h1{
@@ -23,7 +21,6 @@ body{
     color: white;
     font-weight: bold;
 }
-
 
 a.button{
     display:inline-block;
@@ -47,33 +44,28 @@ a.button{
 a.button:hover{
     border-color: #9f6934;
 }
+
+/*
 @media all and (max-width:30em){
 a.button{
     display:block;
     margin:0.2em auto;
     }
-}
+}*/
 
 .filters{
     display: flex;
     overflow: auto;
-    padding: 0px 5px;
-    text-align: center;
+    padding: 15px 0px;
 }
 
 .filters h1{
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
-.priceRange{
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 33.3%;
-    margin: 0px 5px 0px 0px;
-    background-color: white;
-}
-
-.foodType{
+.filterBody{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 1px solid black;
     border-radius: 10px;
     width: 33.3%;
@@ -81,41 +73,8 @@ a.button{
     background-color: white;
 }
 
-.distance{
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 33.3%;
-    margin: 0px 0px 0px 5px; 
-    background-color: white;
-}
-
-.priceLabels{
-  width: 50px;
-  margin: auto;
-  text-align: left;
-}
-
-.foodLabels{
-    width: 100px;
-    padding-left: 25px;
-    margin: auto;
-    text-align: left;
-    padding-bottom: 25px;
-  }
-
-  .distanceLabels{
-    width: 100px;
-    padding-left: 25px;
-    margin: auto;
-    text-align: left;
-  }
-
-h5{
-    text-align: center;
-}
-
 .find{
-    padding-top: 25px;
+    padding-top: 5%;
 }
 
 .foot{
@@ -123,26 +82,40 @@ h5{
   bottom:0;
   left:0;
   right:0;
-  
-  
   background-color: #efefef;
   text-align: center;
 }
 
 .body-center{
-    
+    padding-bottom: 25px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-size: 18px;
 }
 
-
 ul{
     display: inline-block;
-    
 }
 
 li{
     list-style-type: none;
+}
+
+
+@media (max-width: 500px){
+    
+    .filters{
+        display: block;
+    }
+
+    .filterBody{
+        width: 97%;
+        margin-bottom: 3%;
+    }
+
+    .foot{
+        position: relative;
+    }
+
 }
