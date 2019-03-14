@@ -57,6 +57,9 @@ a.button{
     display: flex;
     overflow: auto;
     padding: 15px 0px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .filters h1{
@@ -69,7 +72,7 @@ a.button{
     border: 1px solid black;
     border-radius: 10px;
     width: 33.3%;
-    margin: 0px 5px;
+    margin: 0px 10px;
     background-color: white;
 }
 
@@ -107,15 +110,21 @@ li{
     
     .filters{
         display: block;
+        margin: 0;
+        width: 100%;
     }
 
     .filterBody{
-        width: 97%;
+        width: 94%;
         margin-bottom: 3%;
     }
 
     .foot{
         position: relative;
+    }
+
+    .find{
+        padding-bottom: 5%;
     }
 
 }
